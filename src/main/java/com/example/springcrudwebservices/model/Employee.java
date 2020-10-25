@@ -22,9 +22,15 @@ public class Employee {
 	
 	@Column(name = "email_id")
 	private String emailId;
+	@Column(name = "add-ress")
+	private String addres;
 	
-	
-	
+	public String getName() {
+		return addres;
+	}
+	public void setName(String name) {
+		this.addres = name;
+	}
 	public Employee() {
 		super();
 	}
@@ -59,7 +65,12 @@ public class Employee {
 	public void setEmailId(String emailId) {
 		this.emailId = emailId;
 	}
-	
-	
+	public String getAddres() {
+		return addres;
+	}
+	public void setAddres(String addres) {
+		this.addres = addres;
+	}
+
 
 }
